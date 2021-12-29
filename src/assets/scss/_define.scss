@@ -1,0 +1,828 @@
+/* #region scrollbar */
+
+// .scrollbar-md {
+//     overflow-y: scroll;
+// }
+// ::-webkit-scrollbar {
+//     width: 5px;
+//     height: 5px;
+//     border: none;
+//     box-shadow: none;
+//     background: transparent;
+// }
+// ::-webkit-scrollbar-track {
+//     background: var(--color-border-light);
+//     border: none;
+//     box-shadow: none;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background: var( --color-text-gray);
+//     border: none;
+//     box-shadow: none;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//     background: var( --color-text-gray);
+//     border: none;
+//     box-shadow: none;
+// }
+
+/* #endregion */
+
+/* #region limit text*/
+
+.text-limit-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.text-limit-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.text-limit-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+.text-limit-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+}
+
+.text-limit-5 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+}
+
+/* #endregion */
+
+/* #region flex item*/
+
+.flex-box-6i > * {
+  width: calc(100% / 6);
+}
+
+.flex-box-5i > * {
+  width: calc(100% / 5);
+}
+
+.flex-box-4i > * {
+  width: calc(100% / 4);
+}
+
+.flex-box-3i > * {
+  width: calc(100% / 3);
+}
+
+.flex-box-2i > * {
+  width: 50%;
+}
+
+.flex-box-1i > * {
+  width: 100%;
+}
+
+/* #endregion */
+
+/* #region typography*/
+
+.f-10 {
+  font-size: 0.7142857142857143rem;
+  line-height: 1.2;
+}
+
+.f-11 {
+  font-size: 0.7857142857142857rem;
+  line-height: 1.2;
+}
+
+.f-12 {
+  font-size: 0.8571428571428571rem;
+  line-height: 1.2;
+}
+
+.f-13 {
+  font-size: 0.9285714285714286rem;
+  line-height: 1.2;
+}
+
+.f-14 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.f-15 {
+  font-size: 1.0714rem;
+  line-height: 1.5;
+}
+
+.f-16 {
+  font-size: 1.1428rem;
+  line-height: 1.5;
+}
+
+.f-17 {
+  font-size: 1.214285714285714rem;
+  line-height: 1.5;
+}
+
+.f-18 {
+  font-size: 1.2857rem;
+  line-height: 1.5;
+}
+
+.f-20 {
+  font-size: 1.4285rem;
+  line-height: 1.4;
+}
+
+.f-22 {
+  font-size: 1.5714rem;
+  line-height: 1.4;
+}
+
+.f-24 {
+  font-size: 1.7142rem;
+  line-height: 1.4;
+}
+
+.f-26 {
+  font-size: 1.8571rem;
+  line-height: 1.4;
+}
+
+.f-28 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.f-30 {
+  font-size: 2.1428rem;
+  line-height: 1.4;
+}
+
+.f-32 {
+  font-size: 2.2857rem;
+  line-height: 1.4;
+}
+
+.f-34 {
+  font-size: 2.4285rem;
+  line-height: 1.4;
+}
+
+.f-36 {
+  font-size: 2.5714rem;
+  line-height: 1.3;
+}
+
+.f-38 {
+  font-size: 2.7142rem;
+  line-height: 1.3;
+}
+
+.f-40 {
+  font-size: 2.8571rem;
+  line-height: 1.3;
+}
+
+.f-42 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.f-44 {
+  font-size: 3.1428rem;
+  line-height: 1.3;
+}
+
+.f-46 {
+  font-size: 3.2857rem;
+  line-height: 1.3;
+}
+
+.f-48 {
+  font-size: 3.4285rem;
+  line-height: 1.3;
+}
+
+.f-50 {
+  font-size: 3.5714rem;
+  line-height: 1.3;
+}
+
+.f-52 {
+  font-size: 3.7142rem;
+  line-height: 1.3;
+}
+
+.f-54 {
+  font-size: 3.8571rem;
+  line-height: 1.3;
+}
+
+.f-56 {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+.f-58 {
+  font-size: 4.1428rem;
+  line-height: 1.3;
+}
+
+.f-60 {
+  font-size: 4.28571428571rem;
+  line-height: 1.3;
+}
+
+.f-70 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 1199px) {
+  .f-22 {
+    font-size: 1.4285rem;
+    line-height: 1.4;
+  }
+  .f-24 {
+    font-size: 1.5714rem;
+    line-height: 1.4;
+  }
+  .f-26 {
+    font-size: 1.7142rem;
+    line-height: 1.4;
+  }
+  .f-28 {
+    font-size: 1.8571rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-30 {
+    font-size: 1.8571rem;
+    line-height: 1.4;
+  }
+  .f-32 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .f-34 {
+    font-size: 2.1428rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-36 {
+    font-size: 2.2857rem;
+    line-height: 1.4;
+  }
+  .f-38 {
+    font-size: 2.4285rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-40 {
+    font-size: 2.5714rem;
+    /*font system*/
+    line-height: 1.3;
+  }
+  .f-42 {
+    font-size: 2.7142rem;
+    line-height: 1.3;
+  }
+  .f-44 {
+    font-size: 2.8571rem;
+    line-height: 1.3;
+  }
+  .f-46 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+  .f-48 {
+    font-size: 3.1428rem;
+    line-height: 1.3;
+  }
+  .f-50 {
+    font-size: 3.2857rem;
+    line-height: 1.3;
+  }
+  .f-52 {
+    font-size: 3.4285rem;
+    line-height: 1.3;
+  }
+  .f-54 {
+    font-size: 3.5714rem;
+    line-height: 1.3;
+  }
+  .f-56 {
+    font-size: 3.7142rem;
+    line-height: 1.3;
+  }
+  .f-58 {
+    font-size: 3.8571rem;
+    line-height: 1.3;
+  }
+  .f-60 {
+    font-size: 3.9285rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 991px) {
+  .f-24 {
+    font-size: 1.5714rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-30 {
+    font-size: 1.7142rem;
+    line-height: 1.4;
+  }
+  .f-32 {
+    font-size: 1.8571rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-34 {
+    font-size: 1.8571rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-36 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .f-38 {
+    font-size: 2.1428rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-40 {
+    font-size: 2.1428rem;
+    /*font system*/
+    line-height: 1.4;
+  }
+  .f-42 {
+    font-size: 2.2857rem;
+    line-height: 1.4;
+  }
+  .f-44 {
+    font-size: 2.4285rem;
+    line-height: 1.4;
+  }
+  .f-46 {
+    font-size: 2.5714rem;
+    line-height: 1.3;
+  }
+  .f-48 {
+    font-size: 2.7142rem;
+    line-height: 1.3;
+  }
+  .f-50 {
+    font-size: 2.8571rem;
+    line-height: 1.3;
+  }
+  .f-52 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+  .f-54 {
+    font-size: 3.1428rem;
+    line-height: 1.3;
+  }
+  .f-56 {
+    font-size: 3.2857rem;
+    line-height: 1.3;
+  }
+  .f-58 {
+    font-size: 3.4285rem;
+    line-height: 1.3;
+  }
+  .f-60 {
+    font-size: 3.5714rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 767px) {
+  .f-20 {
+    font-size: 1.2857rem;
+    line-height: 1.5;
+  }
+  .f-24 {
+    font-size: 1.4285rem;
+    line-height: 1.4;
+  }
+  .f-26,
+  .f-28,
+  .f-30,
+  .f-32,
+  .f-34,
+  .f-36,
+  .f-38,
+  .f-40,
+  .f-42 {
+    font-size: 1.71428571429rem;
+    line-height: 1.4;
+  }
+  .f-46,
+  .f-48,
+  .f-50,
+  .f-52,
+  .f-54 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .f-56,
+  .f-58,
+  .f-60 {
+    font-size: 2.1428rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 575px) {
+  .f-18 {
+    font-size: 1.4285rem;
+    line-height: 1.4;
+  }
+  .f-26,
+  .f-28,
+  .f-30,
+  .f-32,
+  .f-34,
+  .f-36,
+  .f-38,
+  .f-40,
+  .f-42 {
+    font-size: 1.7142rem;
+    line-height: 1.4;
+  }
+  .f-46,
+  .f-48,
+  .f-50,
+  .f-52,
+  .f-54,
+  .f-56,
+  .f-58,
+  .f-60 {
+    font-size: 1.8571rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .f-26,
+  .f-28,
+  .f-30,
+  .f-32,
+  .f-34,
+  .f-36,
+  .f-38,
+  .f-40,
+  .f-42 {
+    font-size: 1.5714rem;
+    line-height: 1.4;
+  }
+  .f-46,
+  .f-48,
+  .f-50,
+  .f-52,
+  .f-54,
+  .f-56,
+  .f-58,
+  .f-60 {
+    font-size: 1.7142rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 380px) {
+  .f-18,
+  .f-20,
+  .f-22,
+  .f-24 {
+    font-size: 1.2857rem;
+    line-height: 1.5;
+  }
+}
+
+.f-w-100 {
+  font-weight: 100;
+}
+
+.f-w-200 {
+  font-weight: 200;
+}
+
+.f-w-300 {
+  font-weight: 300;
+}
+
+.f-w-400 {
+  font-weight: 400;
+}
+
+.f-w-500 {
+  font-weight: 500;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.f-w-700 {
+  font-weight: 700;
+}
+
+.f-w-800 {
+  font-weight: 800;
+}
+
+.f-w-900 {
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  .f-w-700,
+  .f-w-600 {
+    font-weight: 600;
+  }
+  .f-w-800,
+  .f-w-900 {
+    font-weight: 700;
+  }
+}
+
+/* #endregion */
+
+/* #region color*/
+
+.color-white {
+  color: $color-white !important;
+}
+
+.color-black {
+  color: $color-black !important;
+}
+
+.bg-primary {
+  color: $bg-primary;
+}
+
+.text-primary {
+  color: $text-primary;
+}
+/* #endregion */
+
+/* #region text*/
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.text-end {
+  text-align: right;
+}
+
+/* #endregion */
+
+/* #region display*/
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+/* #endregion */
+
+/* #region fit*/
+.w-fit {
+  width: fit-content;
+}
+/* #endregion */
+
+/* #region grid system*/
+
+.container-fullwidth {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (max-width: 1399.98px) {
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 860.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (max-width: 680.98px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480.98px) {
+}
+
+@media (max-width: 420.98px) {
+}
+
+@media (max-width: 380.98px) {
+}
+
+@media (max-width: 320.98px) {
+}
+
+/* #endregion */
+
+/* #region common*/
+.btn {
+  font-size: 1.2857142857142858rem;
+  font-weight: 600;
+  color: $color-white;
+  padding: 12px 40px;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &.bg-primary {
+    background-color: $bg-primary;
+    &:hover {
+      background-color: $bg-secondary;
+      color: $color-white;
+    }
+  }
+  &.bg-secondary {
+    background-color: $bg-secondary;
+    &:hover {
+      background-color: $bg-primary;
+      color: $color-white;
+    }
+  }
+}
+.section-subtitle {
+  font-size: 1.9285714285714286rem;
+  margin-bottom: 10px;
+}
+.section-title {
+  line-height: 1;
+  color: $text-primary;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+.title-lg {
+  font-size: 4.285714285714286rem;
+}
+
+.title-md {
+  font-size: 3.2142857142857144rem;
+}
+.section-title-text {
+  font-size: 1.2857142857142858rem;
+  font-weight: 300;
+}
+
+.section {
+  &:not(:last-child) {
+    margin-bottom: 120px;
+  }
+}
+
+@include respond-to("md") {
+  .section-subtitle {
+    text-align: center;
+  }
+  .section-title {
+    text-align: center;
+  }
+
+  .section-title-text {
+    text-align: center;
+  }
+}
+
+@include respond-to("sm") {
+}
+
+@include respond-to("sx") {
+  .title-lg {
+    font-size: 3.2142857142857144rem;
+  }
+
+  .section {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+/* #endregion */
+
+/*
+  
+  @media (max-width: 1680px) {}
+  
+  @media (max-width: 1545px) {}
+  
+  @media (max-width: 1440px) {}
+  
+  @media (max-width: 1366px) {}
+  
+  @media (max-width: 1199px) {}
+  
+  @media (max-width: 1024px) {}
+  
+  @media (max-width: 991px) {}
+  
+  @media (max-width: 860px) {}
+  
+  @media (max-width: 767px) {}
+  
+  @media (max-width: 680px) {}
+  
+  @media (max-width: 575px) {}
+  
+  @media (max-width: 480px) {}
+  
+  @media (max-width: 420px) {}
+  
+  @media (max-width: 380px) {}
+  
+  @media (max-width: 320px) {}
+  
+  */
+
+/* #region*/
+
+/* #endregion */

@@ -1,0 +1,68 @@
+.hero {
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
+  &-thumb {
+    width: 50%;
+  }
+  &-info {
+    flex: 1;
+    margin-left: 8.333333%;
+  }
+}
+
+@include respond-to("md") {
+  .hero {
+    &-inner {
+      // display: flex;
+      // align-items: center;
+      flex-wrap: wrap;
+    }
+    &-thumb {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &-info {
+      // flex: none;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+@include respond-to("sm") {
+  .hero {
+    &-inner {
+      // display: flex;
+      // align-items: center;
+      // flex-wrap: wrap;
+    }
+    &-thumb {
+      // width: 100%;
+      margin-bottom: 25px;
+    }
+    &-info {
+      // flex: none;
+      // width: 100%;
+      // margin-left: 0;
+    }
+  }
+}
+@include respond-to("sx") {
+  .hero {
+    &-inner {
+      // display: flex;
+      // align-items: center;
+      // flex-wrap: wrap;
+    }
+    &-thumb {
+      // width: 100%;
+      margin-bottom: 20px;
+    }
+    &-info {
+      // flex: none;
+      // width: 100%;
+      // margin-left: 0;
+    }
+  }
+}

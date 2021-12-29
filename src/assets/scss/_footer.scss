@@ -1,0 +1,239 @@
+.footer {
+  background-color: $bg-purple;
+  padding-top: 75px;
+  padding-bottom: 55px;
+  margin-top: 120px;
+  &-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &-main {
+    display: flex;
+  }
+  &-sub {
+    padding-top: 55px;
+    > p {
+      font-size: 1.1428571428571428rem;
+      color: $color-white;
+      text-align: center;
+
+      > a {
+        color: $color-border;
+        font-weight: 600;
+      }
+    }
+  }
+  &-sub {
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px;
+  }
+  &-item {
+    width: 25%;
+    padding: 40px;
+  }
+  &__logo {
+    width: 125px;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 1.9285714285714286rem;
+    color: $color-white;
+    margin-bottom: 15px;
+  }
+  &__text {
+    color: $color-white;
+    font-size: 1.1428571428571428rem;
+  }
+}
+
+.address-list {
+  margin: -5px;
+  .address-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    > i {
+      color: $color-border;
+      font-size: 1.4285714285714286rem;
+      margin-right: 15px;
+    }
+    > p {
+      color: $color-white;
+      font-size: 1.1428571428571428rem;
+    }
+  }
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -13px;
+  .social-item {
+    padding: 13px;
+    > a {
+      &:hover {
+        > i {
+          color: $color-border;
+        }
+      }
+      > i {
+        font-size: 1.7857142857142858rem;
+        color: $color-white;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+@include respond-to("md") {
+  .footer {
+    // background-color: $bg-purple;
+    // padding-top: 75px;
+    // padding-bottom: 55px;
+    // margin-top: 120px;
+    &-inner {
+      // display: flex;
+      // flex-direction: column;
+    }
+    &-main {
+      // display: flex;
+    }
+    &-sub {
+      // padding-top: 55px;
+      > p {
+        // font-size: 1.1428571428571428rem;
+        // color: $color-white;
+        // text-align: center;
+
+        > a {
+          // color: $color-border;
+          // font-weight: 600;
+        }
+      }
+    }
+    &-sub {
+    }
+    &-list {
+      // display: flex;
+      margin: -10px -60px;
+    }
+    &-item {
+      width: 50%;
+      padding: 10px 60px;
+    }
+    &__logo {
+      // width: 125px;
+      // margin-bottom: 10px;
+    }
+    &__title {
+      // font-size: 1.9285714285714286rem;
+      // color: $color-white;
+      // margin-bottom: 15px;
+    }
+    &__text {
+      // color: $color-white;
+      // font-size: 1.1428571428571428rem;
+    }
+  }
+}
+
+@include respond-to("sm") {
+  .footer {
+    // background-color: $bg-purple;
+    // padding-top: 75px;
+    // padding-bottom: 55px;
+    // margin-top: 120px;
+    &-inner {
+      // display: flex;
+      // flex-direction: column;
+    }
+    &-main {
+      // display: flex;
+    }
+    &-sub {
+      // padding-top: 55px;
+      > p {
+        // font-size: 1.1428571428571428rem;
+        // color: $color-white;
+        // text-align: center;
+
+        > a {
+          // color: $color-border;
+          // font-weight: 600;
+        }
+      }
+    }
+    &-list {
+      // display: flex;
+      margin: -10px 0;
+    }
+    &-item {
+      width: 100%;
+      padding: 10px 40px;
+    }
+    &__logo {
+      // width: 125px;
+      // margin-bottom: 10px;
+    }
+    &__title {
+      // font-size: 1.9285714285714286rem;
+      // color: $color-white;
+      // margin-bottom: 15px;
+    }
+    &__text {
+      // color: $color-white;
+      // font-size: 1.1428571428571428rem;
+    }
+  }
+}
+@include respond-to("sx") {
+  .footer {
+    // background-color: $bg-purple;
+    // padding-top: 75px;
+    // padding-bottom: 55px;
+    margin-top: 60px;
+    &-inner {
+      // display: flex;
+      // flex-direction: column;
+    }
+    &-main {
+      // display: flex;
+    }
+    &-sub {
+      // padding-top: 55px;
+      > p {
+        // font-size: 1.1428571428571428rem;
+        // color: $color-white;
+        // text-align: center;
+
+        > a {
+          // color: $color-border;
+          // font-weight: 600;
+        }
+      }
+    }
+    &-list {
+      // display: flex;
+      // margin: -10px 0;
+    }
+    &-item {
+      // width: 100%;
+      // padding: 10px 40px;
+    }
+    &__logo {
+      // width: 125px;
+      // margin-bottom: 10px;
+    }
+    &__title {
+      // font-size: 1.9285714285714286rem;
+      // color: $color-white;
+      // margin-bottom: 15px;
+    }
+    &__text {
+      // color: $color-white;
+      // font-size: 1.1428571428571428rem;
+    }
+  }
+}

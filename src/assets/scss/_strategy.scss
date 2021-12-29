@@ -1,0 +1,66 @@
+.strategy {
+  &-inner {
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  &-item {
+    width: 25%;
+    padding: 15px;
+  }
+}
+
+.strategy-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__icon {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.2857142857142858rem;
+    color: $text-primary;
+    margin-bottom: 10px;
+  }
+  &__excerpt {
+    text-align: center;
+    font-size: 1.1428571428571428rem;
+    max-width: 300px;
+  }
+}
+
+@include respond-to("md") {
+  .strategy {
+    &-inner {
+    }
+    &-list {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   margin: -15px;
+    }
+    &-item {
+      width: 50%;
+      //   padding: 15px;
+    }
+  }
+}
+
+@include respond-to("sm") {
+  .strategy {
+    &-inner {
+    }
+    &-list {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   margin: -15px;
+    }
+    &-item {
+      width: 100%;
+      //   padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  color: $color-text;
+  background-color: #fbfbfb;
+  background-image: linear-gradient(#fcfcfc, #fbfbfb, #f5f5f5, #f0f0f0);
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  &:hover {
+    color: unset;
+  }
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
