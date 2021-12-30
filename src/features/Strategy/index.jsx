@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import StrategyCard from '../../components/StrategyCard';
+import { StrategyCard } from '../../components';
 import strategyApi from './../../api/strategyApi';
 
 

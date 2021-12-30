@@ -28,7 +28,7 @@ function Hero() {
                         <p className="section-title-text">
                             {data.excerpt}
                         </p>
-                        <a href={data['btn-direction']} class="btn bg-secondary w-fit" type="submit">{data['btn-text']}</a>
+                        <a href={data['btn-direction']} className="btn bg-secondary w-fit" type="submit">{data['btn-text']}</a>
                     </div>
                 </div>
             </div>

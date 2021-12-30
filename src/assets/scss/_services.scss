@@ -32,6 +32,8 @@
   &__label {
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
     &::before {
       content: "+";
       position: absolute;

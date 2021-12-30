@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Accordion from '../../components/Accordion';
+import { Accordion } from '../../components';
 import servicesApi from './../../api/servicesApi';
 
 function Services() {

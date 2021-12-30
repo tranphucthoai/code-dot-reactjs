@@ -16,19 +16,19 @@ function ServicesSale() {
         })()
     }, [])
     return (
-        <section class="section services-sale">
-            <div class="container">
-                <div class="services-sale-inner">
-                    <div class="services-sale-thumb">
+        <section className="section services-sale">
+            <div className="container">
+                <div className="services-sale-inner">
+                    <div className="services-sale-thumb">
                         <img src={data?.thumb} alt="" />
                     </div>
-                    <div class="services-sale-info">
-                        <p class="section-subtitle">{data.subtitle}</p>
-                        <h2 class="section-title title-md">{data.title}</h2>
-                        <p class="section-title-text">
+                    <div className="services-sale-info">
+                        <p className="section-subtitle">{data.subtitle}</p>
+                        <h2 className="section-title title-md">{data.title}</h2>
+                        <p className="section-title-text">
                             {data.excerpt}
                         </p>
-                        <a href={data['btn-direction']} class="btn bg-secondary w-fit" type="submit">
+                        <a href={data['btn-direction']} className="btn bg-secondary w-fit" type="submit">
                             {data['btn-text']}
                         </a>
                     </div>

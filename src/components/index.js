@@ -1,4 +1,3 @@
-import Strategy from "./StrategyCard/index";
-import Accordion from './Accordion/index';
-export default "./Strategy";
-export default "./Accordion";
+export { default as Accordion } from "./Accordion";
+export { default as PricingCard } from "./PricingCard";
+export { default as StrategyCard } from "./StrategyCard";
