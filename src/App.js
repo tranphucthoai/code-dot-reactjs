@@ -6,6 +6,8 @@ import ServicesSale from "./features/ServicesSale";
 import Pricing from "./features/Pricing/index";
 import News from "./features/News";
 import Contact from "./features/Contact";
+import Footer from "./features/Footer";
+import Clients from "./features/Clients";
 
 function App() {
   return (
@@ -17,10 +19,11 @@ function App() {
         <Services />
         <ServicesSale />
         <Pricing />
+        <Clients />
         <News />
         <Contact />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }

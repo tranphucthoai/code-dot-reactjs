@@ -11,7 +11,7 @@ function Contact() {
             try {
                 const respone = await contactApi.getAll()
                 setData(...respone);
-                console.log('data', ...respone);
+                // console.log('data', ...respone);
             } catch (error) {
                 console.log('Failed to fetch api', error);
             }
