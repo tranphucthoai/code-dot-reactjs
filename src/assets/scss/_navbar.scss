@@ -2,6 +2,8 @@
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+  transition: all 0.3s;
+  position: relative;
   &-inner {
     display: flex;
     align-items: center;
@@ -44,6 +46,7 @@
     line-height: 1;
     font-weight: 600;
     text-transform: capitalize;
+    cursor: pointer;
     > span {
       font-size: 0.8571428571428571rem;
       line-height: 1;
@@ -57,14 +60,14 @@
 }
 
 .fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 998;
     background-color: $color-white;
     @include box-shadow($shadow-primary);
     .navbar-brand {
@@ -130,9 +133,16 @@
       background-color: $color-white;
       transform: translateY(100%);
       padding-bottom: 50px;
-      opacity: 0;
-      backface-visibility: hidden;
-      visibility: hidden;
+      &.active {
+        opacity: 1;
+        backface-visibility: visible;
+        visibility: visible;
+      }
+      &:not(.active) {
+        opacity: 0;
+        backface-visibility: hidden;
+        visibility: hidden;
+      }
     }
     &-nav {
       // display: flex;
@@ -144,6 +154,7 @@
     }
 
     &-toogle {
+      cursor: pointer;
       display: block;
     }
   }
