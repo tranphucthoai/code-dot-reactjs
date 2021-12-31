@@ -8,11 +8,14 @@ import News from "./features/News";
 import Contact from "./features/Contact";
 import Footer from "./features/Footer";
 import Clients from "./features/Clients";
+import Navbar from "./features/Navbar";
 
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <Navbar />
+      </header>
       <main>
         <Hero />
         <Strategy />

@@ -32,7 +32,7 @@ function Footer() {
                                 </p>
                             </li>
                             {data["footer-list"]?.map(item => (
-                                <FooterItem data={item} />
+                                <FooterItem key={item.id} data={item} />
                             ))}
                         </ul>
                     </div>

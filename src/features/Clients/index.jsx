@@ -20,9 +20,26 @@ function Clients() {
     const settings = {
         dots: true,
         infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
     return (
         <section className="section clients" id="clients">
@@ -32,11 +49,11 @@ function Clients() {
                     <h2 className="section-title title-md">{data.title}</h2>
                 </div>
                 <div className="clients-inner">
-                    <Slider {...settings}>
+                    <Slider {...settings} className='clients-slider'>
                         {data.slider?.map(item => (
-                            <div class="item">
-                                <div key={item.id} class="box-img clients-img">
-                                    <img src={item.thumb} alt="" />
+                            <div key={item.id} className="item">
+                                <div className="box-img clients-img">
+                                    <img src={item.thumb} alt={item.thumb} />
                                 </div>
                             </div>
                         ))}
