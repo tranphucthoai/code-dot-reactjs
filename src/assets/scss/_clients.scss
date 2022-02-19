@@ -44,7 +44,7 @@
   }
 }
 
-@include respond-to("sx") {
+@include respond-to("xs") {
   .clients {
     &-inner {
     }

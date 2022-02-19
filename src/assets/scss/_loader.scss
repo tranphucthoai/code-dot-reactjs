@@ -1,0 +1,39 @@
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
+  background-color: rgba($bg-primary, 0.8);
+
+  &__item {
+    width: $sizeLoader/3;
+    height: $sizeLoader/3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: $liteLoader;
+    box-shadow: -$sizeLoader/2 0 $liteLoader, $sizeLoader/2 0 $liteLoader;
+    animation: shadowPulse 2s linear infinite;
+  }
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: $liteLoader;
+    box-shadow: -$sizeLoader/2 0 $brandLoader, $sizeLoader/2 0 $liteLoader;
+  }
+
+  66% {
+    background: $brandLoader;
+    box-shadow: -$sizeLoader/2 0 $liteLoader, $sizeLoader/2 0 $liteLoader;
+  }
+  100% {
+    background: $liteLoader;
+    box-shadow: -$sizeLoader/2 0 $liteLoader, $sizeLoader/2 0 $brandLoader;
+  }
+}

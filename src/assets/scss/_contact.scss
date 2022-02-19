@@ -66,7 +66,7 @@
   }
 }
 
-@include respond-to("sx") {
+@include respond-to("xs") {
   .contact {
     &-inner {
       //   display: flex;

@@ -775,8 +775,9 @@
 @include respond-to("sm") {
 }
 
-@include respond-to("sx") {
-  .title-lg {
+@include respond-to("xs") {
+  .title-lg,
+  .title-md {
     font-size: 3.2142857142857144rem;
   }
 
@@ -787,42 +788,17 @@
   }
 }
 
-/* #endregion */
+@include respond-to("xxs") {
+  .title-lg,
+  .title-md {
+    font-size: 2.5rem;
+  }
 
-/*
-  
-  @media (max-width: 1680px) {}
-  
-  @media (max-width: 1545px) {}
-  
-  @media (max-width: 1440px) {}
-  
-  @media (max-width: 1366px) {}
-  
-  @media (max-width: 1199px) {}
-  
-  @media (max-width: 1024px) {}
-  
-  @media (max-width: 991px) {}
-  
-  @media (max-width: 860px) {}
-  
-  @media (max-width: 767px) {}
-  
-  @media (max-width: 680px) {}
-  
-  @media (max-width: 575px) {}
-  
-  @media (max-width: 480px) {}
-  
-  @media (max-width: 420px) {}
-  
-  @media (max-width: 380px) {}
-  
-  @media (max-width: 320px) {}
-  
-  */
-
-/* #region*/
+  .section {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
 
 /* #endregion */

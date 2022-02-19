@@ -57,7 +57,7 @@
     }
   }
 }
-@include respond-to("sx") {
+@include respond-to("xs") {
   .hero {
     &-inner {
       // display: flex;
