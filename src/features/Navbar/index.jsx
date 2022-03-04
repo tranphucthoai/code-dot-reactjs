@@ -32,6 +32,7 @@ function Navbar() {
               {data.nav?.map((item, index) => (
                 <li key={item.id} className="nav-item">
                   <a
+                    onClick={() => setShowNenu(false)}
                     className="nav-link active"
                     aria-current="page"
                     href={"#" + item.title}
