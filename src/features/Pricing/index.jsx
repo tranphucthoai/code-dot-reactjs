@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { PricingCard } from "../../components";
-import pricingApi from "./../../api/pricingApi";
+import { pricingApi } from "../../api";
+import { useStore, action } from "../../store";
 
 function Pricing() {
   const [data, setData] = useState({});
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -13,6 +16,7 @@ function Pricing() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ pricing: false }));
     })();
   }, []);
   return (

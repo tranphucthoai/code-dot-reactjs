@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
-import heroApi from "./../../api/heroApi";
+import { heroApi } from "../../api";
+import { useStore, action } from "../../store";
 
 function Hero() {
   const [data, setData] = useState({});
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -12,6 +15,7 @@ function Hero() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ hero: false }));
     })();
   }, []);
   return (

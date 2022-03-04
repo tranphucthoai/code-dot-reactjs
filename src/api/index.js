@@ -1,0 +1,11 @@
+export { default as axiosClient } from "./axiosClient";
+export { default as clientsApi } from "./clientsApi";
+export { default as contactApi } from "./contactApi";
+export { default as footerApi } from "./footerApi";
+export { default as heroApi } from "./heroApi";
+export { default as navbarApi } from "./navbarApi";
+export { default as newsApi } from "./newsApi";
+export { default as pricingApi } from "./pricingApi";
+export { default as servicesApi } from "./servicesApi";
+export { default as servicesSaleApi } from "./servicesSaleApi";
+export { default as strategyApi } from "./strategyApi";

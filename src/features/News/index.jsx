@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import NewsCard from "../../components/NewsCard";
-import newsApi from "./../../api/newsApi";
+import { NewsCard } from "../../components";
+import { newsApi } from "../../api";
+import { useStore, action } from "../../store";
 
 function News() {
   const [data, setData] = useState({});
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -13,6 +16,7 @@ function News() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ news: false }));
     })();
   }, []);
   return (

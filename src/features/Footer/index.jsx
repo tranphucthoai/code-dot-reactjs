@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FooterItem } from "../../components";
-import footerApi from "./../../api/footerApi";
+import { footerApi } from "../../api";
+import { useStore, action } from "../../store";
 
 function Footer() {
   const [data, setData] = useState({});
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -13,6 +16,7 @@ function Footer() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ footer: false }));
     })();
   }, []);
   return (

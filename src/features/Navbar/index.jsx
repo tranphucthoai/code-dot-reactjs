@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import navbarApi from "./../../api/navbarApi";
+import { navbarApi } from "../../api";
 import clsx from "clsx";
+import { useStore, action } from "../../store";
 
 function Navbar() {
   const [data, setData] = useState({});
   const [showMenu, setShowNenu] = useState(false);
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -14,6 +17,7 @@ function Navbar() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ navbar: false }));
     })();
   }, []);
   return (

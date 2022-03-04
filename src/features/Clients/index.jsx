@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import clientsApi from "./../../api/clientsApi";
+import { clientsApi } from "../../api";
 import Slider from "react-slick";
+import { useStore, action } from "../../store";
 
 function Clients() {
   const [data, setData] = useState({});
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -13,6 +16,7 @@ function Clients() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ client: false }));
     })();
   }, []);
   const settings = {

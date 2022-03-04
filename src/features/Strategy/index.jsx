@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { StrategyCard } from "../../components";
-import strategyApi from "./../../api/strategyApi";
+import { strategyApi } from "../../api";
+import { useStore, action } from "../../store";
 
 function Strategy() {
   const [data, setData] = useState([]);
+  const [state, dispatch] = useStore();
+  const { setLoading } = action;
 
   useEffect(() => {
     (async () => {
@@ -13,6 +16,7 @@ function Strategy() {
       } catch (error) {
         console.log("Failed to fetch api", error);
       }
+      dispatch(setLoading({ strategy: false }));
     })();
   }, []);
   return (

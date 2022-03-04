@@ -1,0 +1,10 @@
+export { default as Clients } from "./Clients/index";
+export { default as Contact } from "./Contact/index";
+export { default as Footer } from "./Footer/index";
+export { default as Hero } from "./Hero/index";
+export { default as Navbar } from "./Navbar/index";
+export { default as News } from "./News/index";
+export { default as Pricing } from "./Pricing/index";
+export { default as Services } from "./Services/index";
+export { default as ServicesSale } from "./ServicesSale/index";
+export { default as Strategy } from "./Strategy/index";
