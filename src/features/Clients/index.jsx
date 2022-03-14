@@ -28,6 +28,7 @@ function Clients() {
     speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    arrows: false,
     responsive: [
       {
         breakpoint: 991,
