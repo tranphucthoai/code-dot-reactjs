@@ -46,6 +46,7 @@
     line-height: 1;
     font-weight: 600;
     text-transform: capitalize;
+    transition: all 0.2s;
     cursor: pointer;
     > span {
       font-size: 0.8571428571428571rem;
@@ -55,6 +56,13 @@
       text-align: right;
       font-weight: 300;
       color: $color-text-sub;
+      transition: all 0.2s;
+    }
+    &:hover {
+      color: $bg-secondary;
+      > span {
+        color: $bg-secondary;
+      }
     }
   }
 }
@@ -132,7 +140,8 @@
       z-index: 999;
       background-color: $color-white;
       transform: translateY(100%);
-      padding-bottom: 50px;
+      padding-bottom: 30px;
+      padding-top: 20px;
       &.active {
         opacity: 1;
         backface-visibility: visible;
@@ -168,6 +177,9 @@
     &-link {
       display: flex;
       padding: 10px;
+      > span {
+        display: none;
+      }
       // display: inline-flex;
       // align-items: center;
       // justify-content: flex-end;
